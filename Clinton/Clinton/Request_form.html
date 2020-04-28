@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+     input[type=text], input[type=tel], input[type=date], input[type=number], input[type=email] {
+     width: 100%;
+     padding: 12px 20px;
+     margin: 8px 0;
+     display: inline-block;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+     }
+
+     div {
+       width: 700px;  
+       margin: auto;
+       border-radius: 5px;
+       background-color: #f2f2f2;
+       padding: 20px;
+     }
+
+     input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+    </style>
+</head>    
+<body>
+
+<h1 style="text-align: center;"><strong>CLINTON COLLEGE LIBRARY</strong></h1>    
+<h2 style="text-align: center;">REQUEST FOR RECONSIDERATION OF LIBRARY MATERIALS</h2>
+
+<div>
+<form action="mailto:library@clintoncollege.edu" method="POST" enctype="text/plain">
+    <fieldset>
+        <legend>Request for reconsideration of library materials</legend><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="request">Date:</label>
+        <input type="date" id="request" name="request">
+
+        <label for="semester">Email Address:</label>
+        <input type="email" id="semester" name="semester">
+
+        <p>If you have found materials or Library resourses about which you have concerns, please complete this form and submit for consideration of the library materials by the library committee.</p>
+        <h2 style="text-align: center;">MATERIAL FOR CONSIDERATION</h2>
+
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author">
+
+        <label for="publisher">Publisher:</label>
+        <input type="text" id="publisher" name="publisher">
+
+        <label for="courseT">Title:</label>
+        <input type="text" id="courseT" name="courseT">
+
+        <label for="courseN">LC Number:</label>
+        <input type="number" id="courseN" name="courseN">
+
+        <h2 style="text-align: center;">TYPE OF MATERIAL</h2>
+
+        <input type="checkbox" id="book" name="book" value="Book">
+        <label for="book">Book</label><br>
+        <input type="checkbox" id="magazine" name="magazine" value="Magazine">
+        <label for="magazine"> Magazine/Newspaper</label><br>
+        <input type="checkbox" id="video" name="video" value="Video">
+        <label for="video"> Video/DVD/CD</label><br>
+        <input type="checkbox" id="data" name="data" value="Database">
+        <label for="data">Database</label><br><br>
+
+        <p>Did you read, view, or listen to the entire work or a portion of it?</p>
+
+        <input type="checkbox" id="all" name="all" value="All">
+        <label for="all">All</label><br>
+        <input type="checkbox" id="part" name="part" value="Part">
+        <label for="part">Part</label><br><br>
+
+        <p>Please describe your concerns regarding the material:</p>
+
+        <textarea rows="10" cols="90"></textarea>
+
+        <p>What specific pages/sections illustrate your concerns?:</p>
+
+        <textarea rows="10" cols="90"></textarea><br><br>
+
+        <input type="submit" value="Submit"><br>
+       
+    </fieldset>
+ 
+</form> 
+</div>
+
+</body>
+</html>

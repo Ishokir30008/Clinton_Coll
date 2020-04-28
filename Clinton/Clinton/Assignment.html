@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+     input[type=text], input[type=tel], input[type=date], input[type=number] {
+     width: 100%;
+     padding: 12px 20px;
+     margin: 8px 0;
+     display: inline-block;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+     }
+
+     div {
+       width: 700px;  
+       margin: auto;
+       border-radius: 5px;
+       background-color: #f2f2f2;
+       padding: 20px;
+     }
+
+     input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+    </style>
+</head>    
+<body>
+
+<h1 style="text-align: center;"><strong>CLINTON COLLEGE LIBRARY</strong></h1>    
+<h2 style="text-align: center;">ASSIGNMENT ALERTS</h2>
+
+<div>
+<form action="mailto:library@clintoncollege.edu" method="POST" enctype="text/plain">
+    <fieldset>
+        <legend>Assignment Alert:</legend><br>
+
+        <p>This form will be used for the following:</p>
+
+        <p>To let the Library staff know when you and your Students will need resourses for research and for large Assignments.</p>
+
+        <label for="Instructor">Instructor:</label>
+        <input type="text" id="Instructor" name="Instructor">
+
+        <label for="dept">Department:</label>
+        <input type="text" id="dept" name="dept">
+
+        <label for="dat">Date:</label>
+        <input type="date" id="dat" name="dat">
+
+        <label for="courseN">Course Number:</label>
+        <input type="number" id="courseN" name="courseN">
+
+        <label for="courseT">Course Title:</label>
+        <input type="text" id="courseT" name="courseT">
+
+        <h2 style="text-align: center;">TYPES OF MATERIAL NEEDED</h2>
+
+        <input type="checkbox" id="book" name="book" value="Book">
+        <label for="book">Book</label><br>
+        <input type="checkbox" id="magazine" name="magazine" value="Magazine">
+        <label for="magazine"> Reference Materials</label><br>
+        <input type="checkbox" id="video" name="video" value="Video">
+        <label for="video"> Audio Visuals</label><br>
+        <input type="checkbox" id="data" name="data" value="Database">
+        <label for="data">Periodicals</label><br>
+        <input type="checkbox" id="data" name="data" value="Database">
+        <label for="data">Pamphlets</label><br><br>
+
+        <textarea rows="10" cols="90">Assignment:</textarea><br><br>
+
+        <label for="starting">Starting Date of Assignment:</label>
+        <input type="date" id="starting" name="starting">
+
+        
+        <label for="due">Date Due:</label>
+        <input type="date" id="due" name="due">
+
+        <label for="NumClass">Number in Class:</label>
+        <input type="number" id="NumClass" name="NumClass">
+
+        <p>Do you wish to have a Teacher Reserve Shelf?</p>
+
+        <input type="radio" id="yes" name="yes" value="yes">
+        <label for="yes">Yes</label><br>
+        <input type="radio" id="no" name="no" value="no">
+        <label for="female">No</label><br><br>
+
+        <input type="submit" value="Submit"><br>
+
+    </fieldset>
+ 
+</form> 
+</div>
+
+<p style="text-align: center;"><strong>AT LEAST THREE (3) DAYS NOTICE IS APPRECIATED</strong></p>
+
+</body>
+</html>

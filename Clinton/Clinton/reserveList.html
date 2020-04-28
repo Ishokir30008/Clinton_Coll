@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+     input[type=text], input[type=tel], input[type=date], input[type=number] {
+     width: 100%;
+     padding: 12px 20px;
+     margin: 8px 0;
+     display: inline-block;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+     }
+
+     div {
+       width: 700px;  
+       margin: auto;
+       border-radius: 5px;
+       background-color: #f2f2f2;
+       padding: 20px;
+     }
+
+     input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+    </style>
+</head>    
+<body>
+
+<h1 style="text-align: center;"><strong>FACULTY RESERVE LIST</strong></h1>    
+<h2 style="text-align: center;">Clinton College Library</h2>
+
+<div>
+<form action="mailto:library@clintoncollege.edu" method="POST" enctype="text/plain">
+    <fieldset>
+        <legend>Faculty Reserve List:</legend><br>
+        <label for="name">Name of Faculty Member:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="request">Date of Request:</label>
+        <input type="date" id="request" name="request">
+
+        <label for="semester">Semester:</label>
+        <input type="text" id="semester" name="semester">
+
+        <label for="courseN">Course Number:</label>
+        <input type="number" id="courseN" name="courseN">
+
+        <label for="courseT">Course Title:</label>
+        <input type="text" id="courseT" name="courseT">
+
+        <label for="Students">Number of Students in Class:</label>
+        <input type="number" id="Students" name="Students">
+
+        <label for="call">Call Number:</label>
+        <input type="tel" id="call" name="call" placeholder="123-456-7899" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+    
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author">
+
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title"><br><br>
+
+        <input type="submit" value="Submit"><br>
+    </fieldset>
+ 
+</form> 
+</div>
+
+<p style="text-align: center;"><em>Please give the Library at least two days notice to place books on reserve before notifying the class.</em></p>
+
+</body>
+</html>
